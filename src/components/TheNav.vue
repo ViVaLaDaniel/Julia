@@ -23,9 +23,9 @@ const socialLinks = {
 <template>
 <nav class="sticky bottom-0 z-10 bg-white bg-opacity-80 text-3xl backdrop-blur-sm ">
   <ul class="flex items-center justify-around border-t">
-    <li v-for="(icon, page) in navItems" :key="page" class="flex-1">
-      <a :href="socialLinks[page]" target="_blank" class="flex flex-col items-center p-2 text-xs capitalize  ">
-        <component :is="icon" class="h-6 w-6" /> {{ page }}
+    <li v-for="(icon, page) in navItems" :key="page" class="flex-1 sm:">
+      <a :href="socialLinks[page]" target="_blank" class="flex flex-col items-center p-2 text-xs capitalize   ">
+        <component :is="icon" class="h-6 w-6 fill-pink-400  " /> {{ page }}
       </a>
     </li>
   </ul>
