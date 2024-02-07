@@ -1,80 +1,150 @@
 <script setup>
-import { CheckCircleIcon } from "@heroicons/vue/24/solid"
-import { ClockIcon, ListBulletIcon, ChartBarIcon } from "@heroicons/vue/24/outline"
-const navIteams = {
-  timeleni: ClockIcon,
-  activities: ListBulletIcon,
-  progress: ChartBarIcon
-}
+import TheNav from './components/TheNav.vue'
+import TheHeader from './components/TheHeader.vue';
+import TheForm from './components/TheForm.vue';
+
 </script>
 <template>
-  <header class="sticky top-0 z-20 flex items-center justify-between border-b bg-white p-3">
-    <a href="#">
-      <img src="./assets/logo.png" alt="Logo" class="h-9" />
-    </a>
-    <a href="#" class="text-sm">
-      <div v-if="false" class="flex items-center gap-1">
-        Day complete!
-        <CheckCircleIcon class="h-7 text-green-500" />
+<TheHeader/>
+  <section class="bg-blueGray-50 relative pt-12">
+    <div class="flex flex-wrap items-center">
+      <div class="ml-auto mr-auto w-full px-4 md:w-4/12">
+        <img alt="..." class="max-w-full rounded-lg  shadow-2xl shadow-black " src="./assets/Pict/Photo2.png" />
       </div>
-      <div v-else class="flex items-center gap-1">
-        <div>Progress: <span class="font-mono">20%</span></div>
-        <div class="h-3 w-3 rounded-full bg-red-500"></div>
+      <div class="ml-auto mr-auto w-full px-4 md:w-5/12">
+        <div class="md:pr-12">
+          <div
+            class="mb-6 mt-8 inline-flex h-16 w-16 items-center justify-center rounded-full bg-pink-300 p-3 text-center text-pink-600 shadow-lg"
+          >
+            <i class="fas fa-rocket text-xl"></i>
+          </div>
+          <h3 class="text-3xl font-semibold">Лучшая компания на свете</h3>
+          <p class="text-blueGray-500 mt-4 text-lg leading-relaxed">
+            Мы делаем лучшие игрушки в мире.Тепло добро и уют для вас и вашешо сердца
+          </p>
+          <ul class="mt-6 list-none">
+            <li class="py-2">
+              <div class="flex items-center">
+                <div>
+                  <span
+                    class="mr-3 inline-block rounded-full bg-pink-200 px-2 py-1 text-xs font-semibold uppercase text-pink-600"
+                    ><i class="fas fa-fingerprint"></i
+                  ></span>
+                </div>
+                <div>
+                  <h4 class="text-blueGray-500">С любовью</h4>
+                </div>
+              </div>
+            </li>
+            <li class="py-2">
+              <div class="flex items-center">
+                <div>
+                  <span
+                    class="mr-3 inline-block rounded-full bg-pink-200 px-2 py-1 text-xs font-semibold uppercase text-pink-600"
+                    ><i class="fab fa-html5"></i
+                  ></span>
+                </div>
+                <div>
+                  <h4 class="text-blueGray-500">С заботой</h4>
+                </div>
+              </div>
+            </li>
+            <li class="py-2">
+              <div class="flex items-center">
+                <div>
+                  <span
+                    class="mr-3 inline-block rounded-full bg-pink-200 px-2 py-1 text-xs font-semibold uppercase text-pink-600"
+                    ><i class="far fa-paper-plane"></i
+                  ></span>
+                </div>
+                <div>
+                  <h4 class="text-blueGray-500">От сердца</h4>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
-    </a>
-  </header>
-  <main class="flex flex-grow flex-col">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nemo rerum, vitae et culpa
-    exercitationem aliquam neque alias porro, asperiores error! Rerum, ipsam odit. Doloremque
-    voluptas, aut beatae hic labore excepturi in nemo quidem vero iusto ab accusamus sint
-    consequuntur voluptatem nulla minus nam facere omnis pariatur? Qui, ratione nisi maxime magnam,
-    debitis numquam error iusto voluptates nesciunt corporis quidem. Earum ipsa incidunt odio odit
-    voluptatum, facilis modi animi illum nemo ab aperiam? Numquam quam eaque reiciendis provident
-    quas soluta! Quasi, placeat dolorum ducimus atque vero modi cum commodi maxime, perspiciatis
-    natus officia nostrum doloribus. Iste, incidunt repellendus earum quos quas libero quasi ab,
-    molestias fuga totam enim? Eum reiciendis maxime impedit ad commodi sint ut error aut vitae,
-    pariatur reprehenderit dolor tempore unde delectus qui laborum enim veritatis. Molestiae iure,
-    possimus suscipit architecto illo aspernatur maxime deserunt ipsum obcaecati accusamus molestias
-    laborum quos, unde soluta ad id est praesentium aperiam, accusantium veniam incidunt. Qui
-    veritatis doloribus expedita eos minus ad doloremque officia, ratione distinctio corporis
-    suscipit reiciendis magni obcaecati sed incidunt sequi in omnis dolorem corrupti molestias quas
-    iusto! Eum assumenda deleniti ipsam tenetur? Doloribus impedit harum facilis magnam odio a eaque
-    nam dolor iste explicabo consequatur eos quas molestiae ratione id aspernatur hic minus magni
-    atque omnis, voluptates dolore? Necessitatibus sint quisquam ab, ipsam hic unde, rem velit
-    mollitia dolor ea sequi non voluptas obcaecati esse quos aliquam labore cupiditate dolores
-    maxime deleniti. Minima blanditiis, voluptatibus repellat dolor ad expedita totam impedit
-    assumenda ullam libero molestias ipsa dolore, dicta, atque velit voluptas qui. Ut suscipit
-    accusantium exercitationem labore. Inventore ducimus vitae in labore autem error ab impedit cum
-    tenetur expedita magni fugit repellat officiis sunt eaque quo, earum laudantium beatae, ex
-    voluptate veritatis vero cumque voluptatem quasi. Impedit at minima temporibus necessitatibus,
-    sint minus. Fugit facilis temporibus enim molestias soluta itaque unde, eum ex omnis
-    voluptatibus aspernatur deleniti blanditiis hic tempora possimus cum quia ab beatae maxime
-    voluptatum corrupti error. Repudiandae velit veritatis nostrum repellat amet at et labore
-    corrupti voluptatem sed fuga nemo illum, nesciunt magni debitis, ipsa vitae natus nobis eveniet
-    explicabo quibusdam eligendi magnam. Repellat, fugiat. Molestiae accusantium facilis non soluta
-    odit alias aliquam voluptatibus maxime aut id temporibus at, beatae quia dolores? Fugit officiis
-    aperiam fuga necessitatibus sed alias modi magni temporibus id recusandae, voluptatibus odio
-    exercitationem dolor eius nulla mollitia? Quis inventore praesentium doloribus et accusamus
-    eaque veritatis eum nobis distinctio? Veritatis tenetur repudiandae eum ipsam aliquid molestiae
-    illum accusamus, aut voluptas alias sequi, ut sapiente aspernatur adipisci optio fuga
-    cupiditate? Necessitatibus sequi a veniam possimus? Nulla, rem reiciendis deleniti quam
-    molestias, repellat quis error sapiente minima, autem magni ad commodi explicabo tempora
-    similique optio quia quas consequatur temporibus nostrum asperiores mollitia. Eligendi
-    praesentium impedit doloribus assumenda mollitia, maiores suscipit qui illum provident enim non
-    facilis ad quae tenetur atque vel maxime nam. Temporibus, commodi tenetur inventore sed cum
-    eveniet! Aut facere accusamus dicta ipsum, neque totam ullam inventore, quidem error natus,
-    sequi officiis perspiciatis cumque ducimus quam ut eveniet. Ratione, iure eos?
-  </main>
-  <nav class="sticky bottom-0 z-10 bg-white text-3xl">
-    <ul class="flex items-center justify-around border-t">
-      <li v-for="icon,page in navIteams" :key="page" class="flex-1">
-        <a :href="`#{page}`" class="flex flex-col items-center p-2 text-xs capitalize">
-          <component :is="icon" class="h-6 w-6"/>
-          <!--<ClockIcon v-if="page === 'timeline' " class="h-6 w-6"/> 
-          <ListBulletIcon v-else-if=" page === 'activities'" class="h-6 w-6" /> 
-          <ChartBarIcon v-else="" class="h-6 w-6" />  {{ page }}-->
-          </a>
-      </li>
-    </ul>
-  </nav>
+    </div>
+    <footer class="relative mt-8 pb-6 pt-8">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap items-center justify-center md:justify-between">
+          <div class="mx-auto w-full px-4 text-center md:w-6/12"></div>
+        </div>
+      </div>
+    </footer>
+  </section>
+
+  <section class="bg-blueGray-50 relative pt-12">
+    <div class="flex flex-wrap items-center">
+      <div class="ml-auto mr-auto w-full px-4 md:w-5/12">
+        <div class="md:pl-12">
+          <!-- Updated to md:pl-12 to give padding to the left -->
+          <div
+            class="mb-6 mt-8 inline-flex h-16 w-16 items-center justify-center rounded-full bg-pink-300 p-3 text-center text-pink-600 shadow-lg"
+          >
+            <i class="fas fa-rocket text-xl"></i>
+          </div>
+          <h3 class="text-3xl font-semibold">A growing company</h3>
+          <p class="text-blueGray-500 mt-4 text-lg leading-relaxed">
+            The extension comes with three pre-built pages to help you get started faster. You can
+            change the text and images and you're good to go.
+          </p>
+          <ul class="mt-6 list-none">
+            <li class="py-2">
+              <div class="flex items-center">
+                <div>
+                  <span
+                    class="mr-3 inline-block rounded-full bg-pink-200 px-2 py-1 text-xs font-semibold uppercase text-pink-600"
+                    ><i class="fas fa-fingerprint"></i
+                  ></span>
+                </div>
+                <div>
+                  <h4 class="text-blueGray-500">С любовью</h4>
+                </div>
+              </div>
+            </li>
+            <li class="py-2">
+              <div class="flex items-center">
+                <div>
+                  <span
+                    class="mr-3 inline-block rounded-full bg-pink-200 px-2 py-1 text-xs font-semibold uppercase text-pink-600"
+                    ><i class="fab fa-html5"></i
+                  ></span>
+                </div>
+                <div>
+                  <h4 class="text-blueGray-500">С заботой</h4>
+                </div>
+              </div>
+            </li>
+            <li class="py-2">
+              <div class="flex items-center">
+                <div>
+                  <span
+                    class="mr-3 inline-block rounded-full bg-pink-200 px-2 py-1 text-xs font-semibold uppercase text-pink-600 "
+                    ><i class="far fa-paper-plane"></i
+                  ></span>
+                </div>
+                <div>
+                  <h4 class="text-blueGray-500">От сердца</h4>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="ml-auto mr-auto w-full px-4 md:w-4/12">
+        <!-- Moved this div to the right side -->
+        <img alt="..." class="max-w-full rounded-lg shadow-2xl shadow-black " src="./assets/Pict/Pict2.png" />
+      </div>
+    </div>
+    <footer class="relative mt-8 pb-6 pt-8">
+      <!-- Your footer remains unchanged -->
+    </footer>
+  </section>
+  
+  <TheForm/>
+  
+  <TheNav />
+  
 </template>
