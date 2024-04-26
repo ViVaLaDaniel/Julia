@@ -6,10 +6,10 @@ import TheForm from './components/TheForm.vue';
 </script>
 <template>
 <TheHeader/>
-  <section class="bg-blueGray-50 relative pt-12">
+  <section class="bg-blueGray-50 relative pt-12"> 
     <div class="flex flex-wrap items-center">
       <div class="ml-auto mr-auto w-full px-4 md:w-4/12">
-        <img alt="..." class="max-w-full rounded-lg  shadow-2xl shadow-black " src="./assets/Pict/Photo2.png" />
+        <img alt="..." class="max-w-full rounded-lg  shadow-2xl shadow-black " src="./assets/Pict/ws.jpg" />
       </div>
       <div class="ml-auto mr-auto w-full px-4 md:w-5/12">
         <div class="md:pr-12">

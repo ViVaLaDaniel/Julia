@@ -13,15 +13,16 @@ import { BsTelephoneInboundFill } from "@kalimahapps/vue-icons";
 </script>
 
 <template>
-  <header class="sticky top-0 z-20 flex items-center justify-between border-b bg-white bg-opacity-80 p-3 backdrop-blur-sm">
+  <header class="sticky top-0 z-20 flex  items-center justify-between border-b bg-white bg-opacity-80 p-3 backdrop-blur-sm 
+">
     <a href="#">
-      <img src="../assets/KaitHendMade.svg" alt="Logo" class="h-9" />
+      <img src="../assets/KaitHendMade.svg" alt="Logo" class="h-9 "  />
     </a>
     <!-- Для мобильных устройств -->
-    <div class="hidden md:flex items-center">
+    <div class="hidden md:flex items-center flex-2-w-64">
       <a href="tel:=48537617365" class="text-lg flex justify-center">+48537617365</a>
     </div>
-    <!-- Для мобильных устройств -->
+    <!-- Для мобильных устройств dd-->
     <div class="md:hidden flex items-center">
       <a href="tel:=48537617365">
         <BsTelephoneInboundFill class="w-5 h-5 fill-pink-400" />
