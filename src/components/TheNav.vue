@@ -25,7 +25,7 @@ const socialLinks = {
   <ul class="flex items-center justify-around border-t">
     <li v-for="(icon, page) in navItems" :key="page" class="flex-1 sm:">
       <a :href="socialLinks[page]" target="_blank" class="flex flex-col items-center p-2 text-xs capitalize  hover:bg-slate-500 hover:ease-in duration-500 hover:rounded-lg ">
-        <component :is="icon" class="h-6 w-6 fill-pink-400  " /> {{ page }}
+        <component :is="icon" class="h-6 w-6 fill-pink-700   " /> {{ page }}
       </a>
     </li>
   </ul>

@@ -9,23 +9,24 @@
   </header>
 </template>-->
 <script setup>
-import { BsTelephoneInboundFill } from "@kalimahapps/vue-icons"; 
+import { BsTelephoneInboundFill } from '@kalimahapps/vue-icons'
 </script>
 
 <template>
-  <header class="sticky top-0 z-20 flex  items-center justify-between border-b bg-white bg-opacity-80 p-3 backdrop-blur-sm 
-">
+  <header
+    class="sticky top-0 z-20 flex items-center justify-between border-b bg-white bg-opacity-80 p-3 backdrop-blur-sm"
+  >
     <a href="#">
-      <img src="../assets/KaitHendMade.svg" alt="Logo" class="h-9 "  />
+      <img src="../assets/logo4.png" alt="Logo" class="h-25" />
     </a>
     <!-- Для мобильных устройств -->
-    <div class="hidden md:flex items-center flex-2-w-64">
-      <a href="tel:=48537617365" class="text-lg flex justify-center">+48537617365</a>
+    <div class="flex-2-w-64 hidden items-center md:flex">
+      <a href="tel:=48537617365" class="flex justify-center text-lg px-2   ">+48537617365</a>
     </div>
     <!-- Для мобильных устройств dd-->
-    <div class="md:hidden flex items-center">
+    <div class="flex items-center md:hidden">
       <a href="tel:=48537617365">
-        <BsTelephoneInboundFill class="w-5 h-5 fill-pink-400" />
+        <BsTelephoneInboundFill class="h-5 w-5 fill-pink-400" />
       </a>
     </div>
   </header>
